@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.numbedme.controller.Controller">
+   <children>
+      <SplitPane dividerPositions="0.8592964824120602" layoutX="220.0" layoutY="74.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="321.0" prefWidth="598.0">
+               <children>
+                  <SplitPane dividerPositions="0.3187919463087248" layoutX="199.0" layoutY="83.0" prefHeight="339.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="name" layoutX="19.0" layoutY="31.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                              <TextField fx:id="host" layoutX="19.0" layoutY="82.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                              <Label layoutX="19.0" layoutY="14.0" text="Name" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                              <Label layoutX="19.0" layoutY="65.0" text="Host" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                              <TextField fx:id="port" layoutX="19.0" layoutY="137.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                              <Label layoutX="19.0" layoutY="120.0" text="Port" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                              <Button fx:id="connect" layoutX="18.0" layoutY="169.0" mnemonicParsing="false" onAction="#connect" text="Connect" AnchorPane.leftAnchor="19.0" />
+                              <Button fx:id="disconnect" layoutX="94.0" layoutY="169.0" mnemonicParsing="false" onAction="#disconnect" text="Disconnect" AnchorPane.rightAnchor="18.0" />
+                              <Label fx:id="error" layoutX="19.0" layoutY="203.0" text="Label" visible="false" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TextArea fx:id="outputField" editable="false" layoutX="111.0" layoutY="69.0" prefHeight="337.0" prefWidth="421.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="59.0" prefWidth="598.0">
+               <children>
+                  <Button fx:id="send" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#send" text="Send" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                  <TextField fx:id="inputField" layoutX="14.0" layoutY="14.0" onAction="#onEnter" prefHeight="25.0" prefWidth="514.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="14.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
